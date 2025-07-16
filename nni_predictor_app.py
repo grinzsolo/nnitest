@@ -7,9 +7,6 @@ model = joblib.load("best_model.pkl")
 scaler = joblib.load("scaler.pkl")
 
 st.title("NNI Predictor HDPE")
-st.subheader("Model Evaluation")
-st.write(f"R² Score: {r2:.4f}")
-st.write(f"RMSE: {rmse:.4f}")
 
 a = st.number_input("Input LC")
 b = st.number_input("Input MFR Rx1")
